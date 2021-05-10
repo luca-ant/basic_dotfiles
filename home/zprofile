@@ -1,0 +1,47 @@
+
+#[[ -f ~/.zshrc ]] && . ~/.zshrc
+
+export DOTFILES_ROOT="/home/$USER/.dotfiles"
+
+export PATH=$PATH":/snap/bin:/home/$USER/.local/bin"
+export PATH="$DOTFILES_ROOT/custom:"$PATH
+export PATH=".:"$PATH
+#export TERMINAL='termite'
+
+if which google-chrome-stable > /dev/null 2>&1
+then
+    export BROWSER=$(which google-chrome-stable)
+elif which google-chrome > /dev/null 2>&1
+then
+    export BROWSER=$(which google-chrome)
+elif which firefox > /dev/null 2>&1
+then
+    export BROWSER=$(which firefox)
+fi
+
+
+#if which termite > /dev/null 2>&1
+#then
+#    export TERMINAL=$(which termite)
+if which kitty > /dev/null 2>&1
+then
+    export TERMINAL=$(which kitty)
+elif which xfce4-terminal > /dev/null 2>&1
+then
+    export TERMINAL=$(which xfce4-terminal)
+elif which uxterm > /dev/null 2>&1
+then
+    export TERMINAL=$(which uxterm)
+fi
+
+
+#DEFAULT_INTERFACE=$(ip route | grep -e '^default' | awk '{print $5}' | head -n1)
+#ETH_INTERFACE=$(cat /proc/net/dev | grep -e '^en' | cut -d: -f1 | head -n1)
+#WLAN_INTERFACE=$(cat /proc/net/dev | grep -e '^wl' | cut -d: -f1 | head -n1)
+#export DEFAULT_INTERFACE
+#export ETH_INTERFACE
+#export WLAN_INTERFACE
+
+
+#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+#[[ -z $DISPLAY && $XDG_VTNR -le 3 ]] && exec startx
