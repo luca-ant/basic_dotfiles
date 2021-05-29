@@ -1,0 +1,287 @@
+
+[1mHi, luca(B[m
+[36m[-] RUNNING TASK /home/luca/.dotfiles/script/tasks/upgrade_packets.sh...
+[37m[31m
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+[32mHit:1 http://archive.ubuntu.com/ubuntu bionic InRelease
+[31m[32mGet:2 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+[31m[32mGet:3 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+[31m[32mGet:4 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+[31m[32mGet:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2584 kB]
+[31m[32mGet:6 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [423 kB]
+[31m[32mGet:7 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [24.7 kB]
+[31m[32mGet:8 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2152 kB]
+[31m[32mGet:9 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [452 kB]
+[31m[32mGet:10 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [31.6 kB]
+[31m[32mGet:11 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [2184 kB]
+[31m[32mGet:12 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1413 kB]
+[31m[32mFetched 9516 kB in 7s (1346 kB/s)
+[31m[32mReading package lists...
+[31m[32mBuilding dependency tree...
+[31m[32mReading state information...
+[31m[32m19 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[31m[m[31m
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+[32mReading package lists...
+[31m[32mBuilding dependency tree...
+[31m[32mReading state information...
+[31m[32mCalculating upgrade...
+[31m[32mThe following packages will be upgraded:
+[31m[32mapt libapt-pkg5.0 libhogweed4 liblz4-1 libnettle6 libnss-systemd
+[31m[32mlibpam-modules libpam-modules-bin libpam-runtime libpam-systemd libpam0g
+[31m[32mlibseccomp2 libsystemd0 libudev1 libx11-6 libx11-data linux-libc-dev systemd
+[31m[32msystemd-sysv
+[31m[32m19 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+[31m[32mNeed to get 7821 kB of archives.
+[31m[32mAfter this operation, 118 kB disk space will be freed.
+[31m[32mGet:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 liblz4-1 amd64 0.0~r131-2ubuntu3.1 [48.5 kB]
+[31m[32mGet:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnss-systemd amd64 237-3ubuntu10.47 [105 kB]
+[31m[32mGet:3 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpam0g amd64 1.1.8-3.6ubuntu2.18.04.3 [55.0 kB]
+[31m[32mGet:4 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpam-modules-bin amd64 1.1.8-3.6ubuntu2.18.04.3 [40.3 kB]
+[31m[32mGet:5 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpam-modules amd64 1.1.8-3.6ubuntu2.18.04.3 [252 kB]
+[31m[32mGet:6 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpam-runtime all 1.1.8-3.6ubuntu2.18.04.3 [37.1 kB]
+[31m[32mGet:7 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 systemd-sysv amd64 237-3ubuntu10.47 [16.0 kB]
+[31m[32mGet:8 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpam-systemd amd64 237-3ubuntu10.47 [107 kB]
+[31m[32mGet:9 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 systemd amd64 237-3ubuntu10.47 [2914 kB]
+[31m[32mGet:10 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsystemd0 amd64 237-3ubuntu10.47 [209 kB]
+[31m[32mGet:11 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libudev1 amd64 237-3ubuntu10.47 [58.2 kB]
+[31m[32mGet:12 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libapt-pkg5.0 amd64 1.6.13 [808 kB]
+[31m[32mGet:13 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libseccomp2 amd64 2.5.1-1ubuntu1~18.04.1 [43.1 kB]
+[31m[32mGet:14 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 apt amd64 1.6.13 [1201 kB]
+[31m[32mGet:15 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnettle6 amd64 3.4-1ubuntu0.1 [110 kB]
+[31m[32mGet:16 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libhogweed4 amd64 3.4-1ubuntu0.1 [137 kB]
+[31m[32mGet:17 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libx11-data all 2:1.6.4-3ubuntu0.4 [114 kB]
+[31m[32mGet:18 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libx11-6 amd64 2:1.6.4-3ubuntu0.4 [572 kB]
+[31m[32mGet:19 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-libc-dev amd64 4.15.0-143.147 [994 kB]
+[31mperl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+debconf: delaying package configuration, since apt-utils is not installed
+[32mFetched 7821 kB in 5s (1501 kB/s)
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24957 files and directories currently installed.)
+[31m[32mPreparing to unpack .../liblz4-1_0.0~r131-2ubuntu3.1_amd64.deb ...
+[31m[32mUnpacking liblz4-1:amd64 (0.0~r131-2ubuntu3.1) over (0.0~r131-2ubuntu3) ...
+[31m[32mSetting up liblz4-1:amd64 (0.0~r131-2ubuntu3.1) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24957 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libnss-systemd_237-3ubuntu10.47_amd64.deb ...
+[31m[32mUnpacking libnss-systemd:amd64 (237-3ubuntu10.47) over (237-3ubuntu10.45) ...
+[31m[32mPreparing to unpack .../libpam0g_1.1.8-3.6ubuntu2.18.04.3_amd64.deb ...
+[31m[32mUnpacking libpam0g:amd64 (1.1.8-3.6ubuntu2.18.04.3) over (1.1.8-3.6ubuntu2.18.04.2) ...
+[31m[32mSetting up libpam0g:amd64 (1.1.8-3.6ubuntu2.18.04.3) ...
+[31m[32mdebconf: unable to initialize frontend: Dialog
+[31m[32mdebconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+[31m[32mdebconf: falling back to frontend: Readline
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24957 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libpam-modules-bin_1.1.8-3.6ubuntu2.18.04.3_amd64.deb ...
+[31m[32mUnpacking libpam-modules-bin (1.1.8-3.6ubuntu2.18.04.3) over (1.1.8-3.6ubuntu2.18.04.2) ...
+[31m[32mSetting up libpam-modules-bin (1.1.8-3.6ubuntu2.18.04.3) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24959 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libpam-modules_1.1.8-3.6ubuntu2.18.04.3_amd64.deb ...
+[31m[32mdebconf: unable to initialize frontend: Dialog
+[31m[32mdebconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+[31m[32mdebconf: falling back to frontend: Readline
+[31m[32mUnpacking libpam-modules:amd64 (1.1.8-3.6ubuntu2.18.04.3) over (1.1.8-3.6ubuntu2.18.04.2) ...
+[31m[32mSetting up libpam-modules:amd64 (1.1.8-3.6ubuntu2.18.04.3) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24963 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libpam-runtime_1.1.8-3.6ubuntu2.18.04.3_all.deb ...
+[31m[32mUnpacking libpam-runtime (1.1.8-3.6ubuntu2.18.04.3) over (1.1.8-3.6ubuntu2.18.04.2) ...
+[31m[32mSetting up libpam-runtime (1.1.8-3.6ubuntu2.18.04.3) ...
+[31m[32mdebconf: unable to initialize frontend: Dialog
+[31m[32mdebconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+[31m[32mdebconf: falling back to frontend: Readline
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24963 files and directories currently installed.)
+[31m[32mPreparing to unpack .../systemd-sysv_237-3ubuntu10.47_amd64.deb ...
+[31m[32mUnpacking systemd-sysv (237-3ubuntu10.47) over (237-3ubuntu10.45) ...
+[31m[32mPreparing to unpack .../libpam-systemd_237-3ubuntu10.47_amd64.deb ...
+[31m[32mUnpacking libpam-systemd:amd64 (237-3ubuntu10.47) over (237-3ubuntu10.45) ...
+[31m[32mPreparing to unpack .../systemd_237-3ubuntu10.47_amd64.deb ...
+[31m[32mUnpacking systemd (237-3ubuntu10.47) over (237-3ubuntu10.45) ...
+[31m[32mPreparing to unpack .../libsystemd0_237-3ubuntu10.47_amd64.deb ...
+[31m[32mUnpacking libsystemd0:amd64 (237-3ubuntu10.47) over (237-3ubuntu10.45) ...
+[31m[32mSetting up libsystemd0:amd64 (237-3ubuntu10.47) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24963 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libudev1_237-3ubuntu10.47_amd64.deb ...
+[31m[32mUnpacking libudev1:amd64 (237-3ubuntu10.47) over (237-3ubuntu10.45) ...
+[31m[32mSetting up libudev1:amd64 (237-3ubuntu10.47) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24963 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libapt-pkg5.0_1.6.13_amd64.deb ...
+[31m[32mUnpacking libapt-pkg5.0:amd64 (1.6.13) over (1.6.12ubuntu0.2) ...
+[31m[32mSetting up libapt-pkg5.0:amd64 (1.6.13) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24963 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libseccomp2_2.5.1-1ubuntu1~18.04.1_amd64.deb ...
+[31m[32mUnpacking libseccomp2:amd64 (2.5.1-1ubuntu1~18.04.1) over (2.4.3-1ubuntu3.18.04.3) ...
+[31m[32mSetting up libseccomp2:amd64 (2.5.1-1ubuntu1~18.04.1) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24963 files and directories currently installed.)
+[31m[32mPreparing to unpack .../archives/apt_1.6.13_amd64.deb ...
+[31m[32mUnpacking apt (1.6.13) over (1.6.12ubuntu0.2) ...
+[31m[32mSetting up apt (1.6.13) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24963 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libnettle6_3.4-1ubuntu0.1_amd64.deb ...
+[31m[32mUnpacking libnettle6:amd64 (3.4-1ubuntu0.1) over (3.4-1) ...
+[31m[32mSetting up libnettle6:amd64 (3.4-1ubuntu0.1) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24963 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libhogweed4_3.4-1ubuntu0.1_amd64.deb ...
+[31m[32mUnpacking libhogweed4:amd64 (3.4-1ubuntu0.1) over (3.4-1) ...
+[31m[32mSetting up libhogweed4:amd64 (3.4-1ubuntu0.1) ...
+[31m[32m(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 24963 files and directories currently installed.)
+[31m[32mPreparing to unpack .../libx11-data_2%3a1.6.4-3ubuntu0.4_all.deb ...
+[31m[32mUnpacking libx11-data (2:1.6.4-3ubuntu0.4) over (2:1.6.4-3ubuntu0.3) ...
+[31m[32mPreparing to unpack .../libx11-6_2%3a1.6.4-3ubuntu0.4_amd64.deb ...
+[31m[32mUnpacking libx11-6:amd64 (2:1.6.4-3ubuntu0.4) over (2:1.6.4-3ubuntu0.3) ...
+[31m[32mPreparing to unpack .../linux-libc-dev_4.15.0-143.147_amd64.deb ...
+[31m[32mUnpacking linux-libc-dev:amd64 (4.15.0-143.147) over (4.15.0-140.144) ...
+[31m[32mSetting up linux-libc-dev:amd64 (4.15.0-143.147) ...
+[31m[32mSetting up systemd (237-3ubuntu10.47) ...
+[31m[32mSetting up libx11-data (2:1.6.4-3ubuntu0.4) ...
+[31m[32mSetting up libnss-systemd:amd64 (237-3ubuntu10.47) ...
+[31m[32mSetting up systemd-sysv (237-3ubuntu10.47) ...
+[31m[32mSetting up libx11-6:amd64 (2:1.6.4-3ubuntu0.4) ...
+[31m[32mSetting up libpam-systemd:amd64 (237-3ubuntu10.47) ...
+[31m[32mdebconf: unable to initialize frontend: Dialog
+[31m[32mdebconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+[31m[32mdebconf: falling back to frontend: Readline
+[31m[32mProcessing triggers for dbus (1.12.2-1ubuntu1.2) ...
+[31m[32mProcessing triggers for libc-bin (2.27-3ubuntu1.4) ...
+[31m[m[36m[+] RUNNING TASK /home/luca/.dotfiles/script/tasks/upgrade_packets.sh... DONE!
+[m[1mHi, luca(B[m
+[36m[-] RUNNING TASK /home/luca/.dotfiles/script/tasks/vim.sh...
+[37m[31m
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+[32mReading package lists...
+[31m[32mBuilding dependency tree...
+[31m[32mReading state information...
+[31m[32mvim is already the newest version (2:8.0.1453-1ubuntu1.4).
+[31m[32mwget is already the newest version (1.19.4-1ubuntu2.2).
+[31m[32m0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+[31m[m[31m[m[31m[m[31m[m[31m[m[31m--2021-05-29 12:41:24--  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 82679 (81K) [text/plain]
+Saving to: '/home/luca/.vim/autoload/plug.vim'
+
+     0K .......... .......... .......... .......... .......... 61% 1.08M 0s
+    50K .......... .......... ..........                      100% 1.47M=0.07s
+
+2021-05-29 12:41:25 (1.20 MB/s) - '/home/luca/.vim/autoload/plug.vim' saved [82679/82679]
+
+[m[31m--2021-05-29 12:41:25--  https://tpo.pe/pathogen.vim
+Resolving tpo.pe (tpo.pe)... 45.56.74.76, 2600:3c00::f03c:91ff:fe96:85ae
+Connecting to tpo.pe (tpo.pe)|45.56.74.76|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim [following]
+--2021-05-29 12:41:25--  https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8854 (8.6K) [text/plain]
+Saving to: '/home/luca/.vim/autoload/pathogen.vim'
+
+     0K ........                                              100% 1.85M=0.005s
+
+2021-05-29 12:41:26 (1.85 MB/s) - '/home/luca/.vim/autoload/pathogen.vim' saved [8854/8854]
+
+[m[31m[m[31m[mVim: Warning: Output is not to a terminal
+Vim: Warning: Input is not from a terminal
+Error detected while processing /home/luca/.vimrc:[?25l[J
+line   17:[J
+E488: Trailing characters: #Plug 'lervag/vimtex'[J
+line   31:[J
+E185: Cannot find color scheme 'molokai'[J
+line  152:[J
+E749: empty buffer[J
+line  153:[J
+E488: Trailing characters: #let g:tex_flavor='latex'[J
+line  154:[J
+E488: Trailing characters: #let g:vimtex_view_method='zathura'[J
+line  155:[J
+E488: Trailing characters: #let g:vimtex_quickfix_mode=0[J
+line  156:[J
+E488: Trailing characters: #set conceallevel=1[J
+line  157:[J
+E488: Trailing characters: #let g:tex_conceal='abdmg'[J
+line  158:[J
+E488: Trailing characters: #let maplocalleader=[J
+line  159:[J
+E488: Trailing characters: #let g:vimtex_compiler_latexmk = {[J
+line  160:[J
+E488: Trailing characters: #    \ 'build_dir' : 'build',[J
+line  161:[J
+E488: Trailing characters: #    \}[J[?2004h
+Press ENTER or type command to continue[?25h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?2004l[?2004h[?25l[1;1H[38;5;242m  1 [m[48;5;242m [m[35C[7m|[m
+[93m2   [m[4m[93m [m[4m                                   [m[7m|[m
+[38;5;242m  1 [m[48;5;242m [m[35C[7m|[4;41H|[5;41H|[6;41H|[7;41H|[8;41H|[9;41H|[10;41H|[11;41H|[12;41H|[13;41H|[14;41H|[15;41H|[16;41H|[17;41H|[18;41H|[19;41H|[20;41H|[21;41H|[22;41H|[m[4;1H[94m~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       
+~                                       [m
+[1m[7m[Plugins]             2,0-1          All [m[1;42H[93m1   [m[4m                                   [m[2;42H[94m~                                      [3;42H~                                      [4;42H~                                      [5;42H~                                      [6;42H~                                      [7;42H~                                      [8;42H~                                      [9;42H~                                      [10;42H~                                      [11;42H~                                      [12;42H~                                      [13;42H~                                      [14;42H~                                      [15;42H~                                      [16;42H~                                      [17;42H~                                      [18;42H~                                      [19;42H~                                      [20;42H~                                      [21;42H~                                      [22;42H~                                      [m[23;42H[7m[No Name]            0,0-1          All[m[1;5H[38;5;225m[48;5;242mI[m[38;5;225mnstalling plugins ([m[95m0[m[38;5;225m/[m[95m6[m[38;5;225m)[m[2;5H[4m[38;5;121m[[m[4m[93m      [m[4m[38;5;121m][m
+
+[38;5;242m  2 [m[95m[48;5;242m+[m [1m[96mvim-colorschemes[m: Installing ...  [23;25H[1m[7m1   [m[4;7H[1m[96mnerdtree[m: Installing ...        
+[38;5;242m  3 [m[95m[48;5;242m+[m [1m[96mvim-colorschemes[m: Installing ...  [4;7H[1m[96msyntastic[m: Installing ...[5;7H[1m[96mnerdtree[m: Installing ...        
+[38;5;242m  4 [m[95m[48;5;242m+[m [1m[96mvim-colorschemes[m: Installing ...  [4;7H[1m[96mcolorizer[m:[5;7H[1m[96msyntastic[m: Installing ...[6;7H[1m[96mnerdtree[m: Installing ...        
+[38;5;242m  5 [m[95m[48;5;242m+[m [1m[96mvim-colorschemes[m: Installing ...  [4;7H[1m[96mlightline.vim[m: Installing ...[5;7H[1m[96mcolorizer[m:[6;7H[1m[96msyntastic[m: Installing ...[7;7H[1m[96mnerdtree[m: Installing ...        
+[38;5;242m  6 [m[95m[48;5;242m+[m [1m[96mvim-colorschemes[m: Installing ...  [4;7H[1m[96multisnips[m: Installing ...    [5;7H[1m[96mlightline.vim[m: Installing ...[6;7H[1m[96mcolorizer[m:[7;7H[1m[96msyntastic[m: Installing ...[8;7H[1m[96mnerdtree[m: Installing ...        
+[38;5;242m  7 [m[95m[48;5;242m+[m [1m[96mvim-colorschemes[m: Installing ...  [2;5H[?25h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?2004l[?2004h[?25l[1;3H[38;5;242m3[m[21C[95m6[m
+[38;5;242m  2 [m[38;5;121m[48;5;242m[[m[93m======[m[38;5;121m][m                            
+
+[93m4   [m[4m[38;5;224m- [m[1m[4m[96mMerging origin/master (vim-colorsc[m[5;3H[38;5;242m1[m[1C[38;5;224m[48;5;242m-[m[38;5;224m [m[93multisnips:[m Resolving deltas: 100%[6;3H[38;5;242m2[m[1C[38;5;224m[48;5;242m-[m[38;5;224m [m[93mlightline.vim:[m remote: Total 72 (d[7;3H[38;5;242m3[m[1C[38;5;224m[48;5;242m-[m[38;5;224m [m[93mcolorizer:[m remote: Total 49 (delta[8;3H[38;5;242m4[m[1C[38;5;224m[48;5;242m-[m[38;5;224m [m[93msyntastic:[m Resolving deltas: 100%[9;3H[38;5;242m5[m[1C[38;5;224m[48;5;242m-[m[38;5;224m [m[93mnerdtree:[m Resolving deltas: 100% (
+[38;5;242m  6 [m[38;5;224m[48;5;242m-[m[38;5;224m [m[93mvim-colorschemes:[m Resolving deltas[23;23H[1m[7m4,[?2004l[?2004h[m[4;30H[1m[4m[96mnerdtree)[m[4m  [?2004l[?2004h[m[4;30H[1m[4m[96msyntastic)[?2004l[?2004h[4;30Hcolorizer)[m[4m [?2004l[?2004h[m[4;30H[1m[4m[96mlightline.v[?2004l[?2004h[4;30Hultisnips)[m[4m [?2004l[?2004h[m[4;7H[1m[4m[96mFinishing ... [m[4m                    [m[4;21H[1m[4m[96mDone![?25h[24;1H[?2004l[m[?2004l[?1l>[?1049l[23;0;0t
+[36m[+] RUNNING TASK /home/luca/.dotfiles/script/tasks/vim.sh... DONE!
+[m[1mHi, luca(B[m
+[36m[-] RUNNING TASK /home/luca/.dotfiles/script/tasks/zsh.sh...
+[37m[31m
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+[32mReading package lists...
+[31m[32mBuilding dependency tree...
+[31m[32mReading state information...
+[31m[32mcurl is already the newest version (7.58.0-2ubuntu3.13).
+[31m[32mgit is already the newest version (1:2.17.1-1ubuntu0.8).
+[31m[32mzsh is already the newest version (5.4.2-3ubuntu3.1).
+[31m[32m0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+[31m[m[31m[mCloning Oh My Zsh...
+Cloning into '/home/luca/.oh-my-zsh'...
+
+Looking for an existing zsh config...
+Found ~/.zshrc. Backing up to /home/luca/.zshrc.pre-oh-my-zsh
+Using the Oh My Zsh template file and adding it to ~/.zshrc.
+
+         __                                     __
+  ____  / /_     ____ ___  __  __   ____  _____/ /_
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
+                        /____/                       ....is now installed!
+
+
+Before you scream Oh My Zsh! please look over the ~/.zshrc file to select plugins, themes, and options.
+
+• Follow us on Twitter: [4mhttps://twitter.com/ohmyzsh[24m
+• Join our Discord server: [4mhttps://discord.gg/ohmyzsh[24m
+• Get stickers, shirts, coffee mugs and other swag: [4mhttps://shop.planetargon.com/collections/oh-my-zsh[24m
+
+[31m[m[31m[m[31mPassword: 
+[m[36m[+] RUNNING TASK /home/luca/.dotfiles/script/tasks/zsh.sh... DONE!
+[m
