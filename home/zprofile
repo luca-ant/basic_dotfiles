@@ -6,7 +6,11 @@ export DOTFILES_ROOT="/home/$USER/.dotfiles"
 export PATH=$PATH":/snap/bin:/home/$USER/.local/bin"
 export PATH="$DOTFILES_ROOT/custom:"$PATH
 export PATH=".:"$PATH
-#export TERMINAL='termite'
+
+if [ -z $AUTOSTART_FILE ]
+then
+    export AUTOSTART_FILE="/home/$USER/.local/bin/autostart.sh"
+fi
 
 if which google-chrome-stable > /dev/null 2>&1
 then
@@ -23,7 +27,10 @@ fi
 #if which termite > /dev/null 2>&1
 #then
 #    export TERMINAL=$(which termite)
-if which kitty > /dev/null 2>&1
+if which alacritty > /dev/null 2>&1
+then
+    export TERMINAL=$(which alacritty)
+elif which kitty > /dev/null 2>&1
 then
     export TERMINAL=$(which kitty)
 elif which xfce4-terminal > /dev/null 2>&1
@@ -43,5 +50,6 @@ fi
 #export WLAN_INTERFACE
 
 
-#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+#[[ -z $DISPLAY && $XDG_VTNR -eq 5 ]] && exec startx
 #[[ -z $DISPLAY && $XDG_VTNR -le 3 ]] && exec startx

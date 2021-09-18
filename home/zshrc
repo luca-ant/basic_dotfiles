@@ -171,14 +171,16 @@ run() { setsid $* >/dev/null 2>&1 }
 weather() { curl -s "https://wttr.in/$*" }
 # weather() { curl -s "https://wttr.in/$*?n" }
 
-### REMIND UPDATE SYSTEM
-#
-#if [ -f "$DOTFILES_ROOT/custom/upgrade_system.sh" ]
-#then
-#    "$DOTFILES_ROOT/custom/upgrade_system.sh" 2>/dev/null
-#fi
+## REMIND UPDATE SYSTEM
 
-## SSH AGENT
-#eval `ssh-agent` >/dev/null 2>&1
-#trap 'test -n "$SSH_AGENT_PID" && /usr/bin/ssh-agent -k >/dev/null 2>&1' 0
+if [ -f "$DOTFILES_ROOT/custom/upgrade_system.sh" ]
+then
+    "$DOTFILES_ROOT/custom/upgrade_system.sh" 2>/dev/null
+fi
+
+# SSH AGENT
+eval `ssh-agent` >/dev/null 2>&1
+trap 'test -n "$SSH_AGENT_PID" && /usr/bin/ssh-agent -k >/dev/null 2>&1' 0
+
+
 
