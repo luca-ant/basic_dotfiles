@@ -1,19 +1,13 @@
+# .zshrc
+# [Read when interactive]
+# I put here everything needed only for interactive usage
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME"/.oh-my-zsh"
-#export PATH=$PATH":/snap/bin:/home/$USER/.local/bin"
-export TERM='xterm-256color'
-#export TERMINAL='termite'
-export EDITOR='vim'
-export VISUAL='vim'
-#export LANG=it_IT.UTF-8
-export LANG=en_US.UTF-8
-
-export DOTFILES_ROOT="/home/$USER/.dotfiles"
-
-
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -135,45 +129,23 @@ then
     source /etc/profile.d/vte.sh > /dev/null 2>&1
 fi
 
-# MY ALIAS
+## MY ALIAS
 
-alias ll='ls -alFh'
-alias l='ls -lhF'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+#if [ -f "$MY_SHELL/alias.sh" ]
+#then
+#    source "$MY_SHELL/alias.sh" 2>/dev/null
+#fi
 
-alias pacman_autoremove='sudo pacman -R $(pacman -Qdtq)'
 
-alias vim='vim -p'
-alias vims='vim $(fzf --height 50% --reverse)'
+## MY ALIAS AND COMMANDS
 
-alias ip_pub="curl -s https://ipinfo.io/ip"
-alias size='du -d1 -h'
-
-# systemd
-alias sc=systemctl
-alias scu='systemctl --user'
-
-alias scst='sudo systemctl start'
-alias scsp='sudo systemctl stop'
-alias scrl='sudo systemctl reload'
-alias scrst='sudo systemctl restart'
-alias sce='sudo systemctl enable'
-alias scd='sudo systemctl disable'
-
-alias scs='systemctl status'
-
-# MY COMMANDS
-#
-# run() { nohup >/dev/null 2>&1 $* & disown }
-run() { setsid $* >/dev/null 2>&1 }
-
-weather() { curl -s "https://wttr.in/$*" }
-# weather() { curl -s "https://wttr.in/$*?n" }
-
-#rn() {N=$(echo "$1" | tr " \'*!@#$%^&*" "_" | sed -E -e "s/\[|\]|\(|\)/_/g" | tr -s "_") ;  mv "$1" "$N"}
-rn() {N=$(echo "$1" | tr " \'\":;\\|/*!@#$%^&*()[]{}" "_") ;  mv "$1" "$N"}
+if [ -d "$MY_SHELL" ]; then
+    for F in "$MY_SHELL"/*; do
+#        [ -x "$F" ] && source "$F"
+        source "$F"
+    done >/dev/null 2>&1
+    unset F
+fi
 
 ## REMIND UPDATE SYSTEM
 
@@ -185,6 +157,4 @@ fi
 # SSH AGENT
 eval `ssh-agent` >/dev/null 2>&1
 trap 'test -n "$SSH_AGENT_PID" && /usr/bin/ssh-agent -k >/dev/null 2>&1' 0
-
-
 

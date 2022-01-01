@@ -42,6 +42,16 @@ then
 
     color_command ln -sf "$BD/home/zshrc" ~/.zshrc
     color_command ln -sf "$BD/home/zprofile" ~/.zprofile
+    color_command ln -sf "$BD/home/zshenv" ~/.zshenv
+
+    color_command mkdir -p "$MY_SHELL"
+
+    if [ -d "$BD"/home/my_shell ]; then
+        for F in "$BD"/home/my_shell/*; do
+            color_command ln -sf "$F" "$MY_SHELL"
+        done
+        unset F
+    fi
 
     color_command chsh -s /usr/bin/zsh
 
@@ -55,6 +65,8 @@ then
 
     color_command rm -rf ~/.zshrc*
     color_command rm -rf ~/.zprofile
+    color_command rm -rf ~/.zshenv
+    color_command rm -rf "$MY_SHELL"
 
 else
     usage
