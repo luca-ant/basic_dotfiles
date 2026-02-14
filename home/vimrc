@@ -15,9 +15,9 @@ Plug 'flazz/vim-colorschemes'
 
 Plug 'SirVer/ultisnips'
 
-if executable('latex')
-    Plug 'lervag/vimtex'
-endif
+"if executable('latex')
+"    Plug 'lervag/vimtex'
+"endif
 
 "Plug '907th/vim-auto-save'
 
